@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "657604437909",
+    "firebase_url": "https://uosmobiledev-default-rtdb.firebaseio.com",
+    "project_id": "uosmobiledev",
+    "storage_bucket": "uosmobiledev.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:657604437909:android:537d582529d5082c49789c",
+        "android_client_info": {
+          "package_name": "Group.G19.mobliedevelopmentcw1"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "657604437909-ep79karms57h6rnlaph0a6to5e012au3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyApa2fj3LgmkW4lFCWxvDuQNnqEm-3yPjk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "657604437909-ep79karms57h6rnlaph0a6to5e012au3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

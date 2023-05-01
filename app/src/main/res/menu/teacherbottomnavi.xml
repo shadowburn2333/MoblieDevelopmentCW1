@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:orderInCategory="0"
+        android:id="@+id/teacherHomePageBottomNaviHome"
+        android:title="Home"/>
+    <item
+        android:orderInCategory="1"
+        android:id="@+id/teacherHomePageBottomNaviCourse"
+        android:title="Course"/>
+    <item
+        android:orderInCategory="2"
+        android:id="@+id/teacherHomePageBottomNaviSetting"
+        android:title="Setting"/>
+
+</menu>
