@@ -3,8 +3,10 @@ package Group.G19.mobliedevelopmentcw1
 import Group.G19.mobliedevelopmentcw1.model.CourseData
 import Group.G19.mobliedevelopmentcw1.view.CourseAdapter
 import android.annotation.SuppressLint
+import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
+import android.widget.Adapter
 import android.widget.EditText
 import android.widget.Toast
 import androidx.appcompat.app.AlertDialog
@@ -13,8 +15,8 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.google.android.material.floatingactionbutton.FloatingActionButton
 
-c
-class TeacherAddCourse : AppCompatActivity() {
+
+class TeacherAddCourse : AppCompatActivity(),CourseAdapter.MyClickListener {
 
     private lateinit var addsBtn:FloatingActionButton
     private lateinit var recv:RecyclerView
@@ -30,7 +32,7 @@ class TeacherAddCourse : AppCompatActivity() {
         addsBtn=findViewById(R.id.addingBtn)
         recv=findViewById(R.id.mRecycler)
         courseList=ArrayList()
-        courseAdapter= CourseAdapter(this,courseList)
+        courseAdapter= CourseAdapter(this,courseList,this@TeacherAddCourse)
         recv.layoutManager=LinearLayoutManager(this)
         recv.adapter=courseAdapter
         addsBtn.setOnClickListener{
@@ -70,6 +72,11 @@ class TeacherAddCourse : AppCompatActivity() {
 
     }
 
+    override fun onClick(position: Int) {
+        when(position){
+            in 0..10000->startActivity(Intent(this,TeacherCourseCreateActivity::class.java))
+        }
+    }
 
 
 }

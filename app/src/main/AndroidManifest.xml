@@ -27,6 +27,7 @@
         <activity android:name=".TeacherLoginPage"></activity>
         <activity android:name=".TeacherHomePage"></activity>
         <activity android:name=".TeacherAddCourse"></activity>
+        <activity android:name=".TeacherCourseCreateActivity"></activity>
     </application>
 
 </manifest>
