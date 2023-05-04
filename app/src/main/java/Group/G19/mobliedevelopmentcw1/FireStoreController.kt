@@ -1,5 +1,6 @@
 package Group.G19.mobliedevelopmentcw1
 
+import android.content.ContentValues.TAG
 import android.text.BoringLayout
 import android.util.Log
 import com.google.firebase.firestore.ktx.firestore
@@ -13,6 +14,8 @@ class FireStoreController {
     interface ExistEmail {
         fun onCallback(ExistEmail: Boolean)
     }
+
+
 
     public fun addNewUser( data: HashMap<String, Any>)
     {
@@ -73,6 +76,18 @@ class FireStoreController {
         }
         return name
     }
+    /*public fun teacheraddCourse(data:HashMap<String,Any>) {
+        Log.i("DB_related", "Start Write in")
+        val AddCourse = hashMapOf(
+            "Coursename" to "1",
+            "Description" to "1"
+        )
 
 
+        db.collection("kkk").document("AddCourse")
+            .set(data)
+            .addOnSuccessListener { Log.d(TAG, "DocumentSnapshot successfully written!") }
+            .addOnFailureListener { e -> Log.w(TAG, "Error writing document", e) }
+
+    }*/
 }

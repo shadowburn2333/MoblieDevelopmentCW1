@@ -105,7 +105,7 @@ class StudentRegisterPage : AppCompatActivity(){
     suspend fun getDataFromStudentRegisterInput(): HashMap<String,Any> {
         val emailInputTextField : TextView = findViewById(R.id.studentRegisterEmailInputField)
         val passwordInputField : TextView = findViewById(R.id.studentRegisterPasswordInputfield)
-        val passwordCheckInputField : TextView = findViewById(R.id.studentRegisterPasswordInputfieldCheck)
+        val passwordCheckInputField : TextView = findViewById(R.id  .studentRegisterPasswordInputfieldCheck)
         val nameInputTextField : TextView = findViewById(R.id.studentRegisterNameInputField)
         val fireStoreController = FireStoreController()
 
