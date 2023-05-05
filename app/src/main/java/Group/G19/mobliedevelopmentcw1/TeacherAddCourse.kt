@@ -34,6 +34,7 @@ class TeacherAddCourse : AppCompatActivity(),CourseAdapter.MyClickListener {
     @SuppressLint("MissingInflatedId", "WrongViewCast")
     override fun onCreate(savedInstanceState: Bundle?) {
 
+
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_teacher_add_course)
         addsBtn=findViewById(R.id.addingBtn)
@@ -89,6 +90,8 @@ class TeacherAddCourse : AppCompatActivity(),CourseAdapter.MyClickListener {
             in 0..10000->startActivity(Intent(this,TeacherCourseCreateActivity::class.java))
         }
     }
+
+
    fun getDataCourseNameInput(coursename:String) {
 
        val db=Firebase.firestore
@@ -97,20 +100,22 @@ class TeacherAddCourse : AppCompatActivity(),CourseAdapter.MyClickListener {
 
            )
 
-       db.collection("Teacher").document("AddCourse").collection("CourseName").add(data)
+       db.collection("Course").add(data)
            .addOnSuccessListener { Log.d(TAG, "DocumentSnapshot successfully written!") }
            .addOnFailureListener { e -> Log.w(TAG, "Error writing document", e) }
 
        // db.collection("kkk").document("AddCourse").set(data)
    }
 
-    fun  readDataCourseNameInput(Collection:String,Document:String): Task<QuerySnapshot> {
+    /*fun  readDataCourseNameInput(Collection:String,Document:String): Task<QuerySnapshot> {
 
         val db=Firebase.firestore
         val a=db.collection(Collection)
-            .whereEqualTo(Document, true)
+            .whereEqualTo("English", true)
             .get()
             .addOnSuccessListener { documents ->
+
+
                 for (document in documents) {
                     Log.d(TAG, "${document.id} => ${document.data}")
                 }
@@ -120,7 +125,7 @@ class TeacherAddCourse : AppCompatActivity(),CourseAdapter.MyClickListener {
             }
 
         return a
-    }
+    }*/
 
 
 }

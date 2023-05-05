@@ -4,8 +4,12 @@ import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
+import com.google.firebase.firestore.ktx.firestore
+import com.google.firebase.ktx.Firebase
 
 class MainActivity : AppCompatActivity() {
+
+
     //-----!For all activity in the application, only firestore controller can access to the firestore database!------
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
