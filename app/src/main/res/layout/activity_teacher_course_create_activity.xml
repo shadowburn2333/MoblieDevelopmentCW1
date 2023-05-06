@@ -7,11 +7,12 @@
     android:layout_height="match_parent">
 
     <EditText
-
+        android:textColor="@android:color/white"
         android:id="@+id/EditQuizName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:hint="please enter quiz name"
+        android:textColorHint="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.581"
@@ -20,11 +21,12 @@
         app:layout_constraintVertical_bias="0.345" />
 
     <EditText
-
+        android:textColor="@android:color/white"
         android:id="@+id/EditQuizContent"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:hint="please add quiz content"
+        android:textColorHint="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.913"
@@ -37,7 +39,7 @@
         android:textColor="@android:color/white"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Quiz Content"
+        android:text="Quiz Description"
         android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"

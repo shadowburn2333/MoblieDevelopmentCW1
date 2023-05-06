@@ -13,6 +13,7 @@
         android:layout_height="wrap_content"
         android:fontFamily="monospace"
         android:text="Teacher Login"
+
         android:textSize="34sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -21,6 +22,7 @@
         app:layout_constraintVertical_bias="0.18" />
 
     <EditText
+        android:textColor="@android:color/white"
         android:id="@+id/teacherLoginPasswordInputfield"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -58,6 +60,7 @@
         android:fontFamily="monospace"
         android:inputType="text"
         android:textSize="14sp"
+        android:textColor="@android:color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.708"
