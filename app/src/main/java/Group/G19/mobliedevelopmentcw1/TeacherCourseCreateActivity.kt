@@ -61,7 +61,7 @@ class TeacherCourseCreateActivity: AppCompatActivity() {
                 .addOnFailureListener { exception ->
                     Log.w(TAG, "Error getting documents: ", exception)
                 }
-            val intent = Intent(this@TeacherCourseCreateActivity, TeacherAddQuiz::class.java)
+            val intent = Intent(this@TeacherCourseCreateActivity, QuizStartActivity::class.java)
             startActivity(intent)
 
         }

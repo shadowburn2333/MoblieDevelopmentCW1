@@ -29,6 +29,9 @@
         <activity android:name=".TeacherAddCourse"></activity>
         <activity android:name=".TeacherCourseCreateActivity"></activity>
         <activity android:name=".TeacherAddQuiz"></activity>
+        <activity android:name=".QuizStartActivity"></activity>
+        <activity android:name=".QuizQuestionsActivity"></activity>
+
     </application>
 
 </manifest>

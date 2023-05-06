@@ -3,9 +3,11 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:background="@drawable/ic_bg"
     android:layout_height="match_parent">
 
     <EditText
+        android:textColor="@android:color/white"
         android:id="@+id/teacherRegisterPasswordInputfieldCheck"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -21,6 +23,7 @@
         app:layout_constraintVertical_bias="0.629" />
 
     <TextView
+        android:textColor="@android:color/white"
         android:id="@+id/teacherRegisterPasswordTitlecheck"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -35,6 +38,7 @@
         app:layout_constraintVertical_bias="0.100000024" />
 
     <TextView
+        android:textColor="@android:color/white"
         android:id="@+id/teacherRegisterTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -75,6 +79,7 @@
         app:layout_constraintVertical_bias="0.259" />
 
     <TextView
+        android:textColor="@android:color/white"
         android:id="@+id/teacherRegisterEmailTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -105,6 +110,7 @@
         app:layout_constraintVertical_bias="0.8" />
 
     <TextView
+        android:textColor="@android:color/white"
         android:id="@+id/teacherRegisterPasswordTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -119,6 +125,7 @@
         app:layout_constraintVertical_bias="0.157" />
 
     <TextView
+        android:textColor="@android:color/white"
         android:id="@+id/teacherRegisterNameTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

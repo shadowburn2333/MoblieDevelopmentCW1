@@ -50,7 +50,7 @@ class TeacherLoginPage :AppCompatActivity(){
                         withContext(Dispatchers.Main) {
                             showDialog("Login Success","Welcome:  " + data["Name"])
                         }
-                        val intent = Intent(this@TeacherLoginPage, TeacherHomePage::class.java)
+                        val intent = Intent(this@TeacherLoginPage, TeacherHomePage::class.java)//TeacherHomePage
                         var bundle = Bundle()
                         intent.putExtras(bundle)
                         startActivity(intent)

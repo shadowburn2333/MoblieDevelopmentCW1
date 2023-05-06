@@ -7,6 +7,7 @@
     android:layout_height="match_parent"
     android:gravity="center"
     android:orientation="vertical"
+
     tools:context=".StudentHomePage">
 
     <Group.G19.mobliedevelopmentcw1.MyNavigationViewer.mViewPager
